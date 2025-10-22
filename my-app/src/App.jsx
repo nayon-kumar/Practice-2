@@ -3,6 +3,7 @@ import HeaderArea from './components/HeaderArea'
 import BannerArea from './components/BannerArea'
 import ServiceArea from './components/ServiceArea'
 import PricingPlan from './components/PricingPlan'
+import Team from './components/Team'
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <BannerArea/>
       <ServiceArea/>
       <PricingPlan/>
+      <Team/> 
     </div>
   )
 }

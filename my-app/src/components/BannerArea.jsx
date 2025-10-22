@@ -25,7 +25,7 @@ const BannerArea = () => {
                         Nunc lacus lacus sit amet accumsan est pulvinar non praesent
                         tristique enim lorem phasellus auctor lacus.
                     </p>
-                    <button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-2 rounded-full transition duration-300">
+                    <button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-2 rounded-full transition duration-300 cursor-pointer">
                         More Details
                     </button>
                 </div>

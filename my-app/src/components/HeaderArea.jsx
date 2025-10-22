@@ -23,7 +23,7 @@ const HeaderArea = () => {
           <img src={profile} alt="" />
           <span className="font-medium">Login</span>
         </div>
-        <button className="bg-yellow-500 text-[#2F2505] px-4 py-2 rounded-full font-medium hover:bg-yellow-600 transition">
+        <button className="bg-yellow-500 text-[#2F2505] px-4 py-2 rounded-full font-medium hover:bg-yellow-600 transition cursor-pointer">
           Get in Touch
         </button>
       </div>

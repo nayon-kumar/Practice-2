@@ -21,7 +21,6 @@ const PricingPlan = () => {
                             <h2 className="text-2xl font-bold mb-2">{card.title}</h2>
                             <p className="text-7xl font-bold mb-6">{card.price}</p>
 
-                            {/* Features */}
                             <div className="w-full space-y-3 mb-6">
                                 {card.features.map((feature, i) => (
                                     <div key={i} className="flex items-center gap-2">
@@ -31,7 +30,7 @@ const PricingPlan = () => {
                                 ))}
                             </div>
 
-                            <button className="bg-yellow-500 text-[#190B00] font-bold px-6 py-2 rounded-lg hover:bg-yellow-600 transition">
+                            <button className="bg-yellow-500 text-[#190B00] font-bold px-6 py-2 rounded-lg hover:bg-yellow-600 transition cursor-pointer">
                                 GET STARTED
                             </button>
                         </div>
