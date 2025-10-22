@@ -1,0 +1,35 @@
+[
+  {
+    "title": "Basic Plan",
+    "price": "$29",
+    "features": [
+      { "name": "SEO Audits", "available": true },
+      { "name": "SEO Management", "available": true },
+      { "name": "SEO Copywriting", "available": false },
+      { "name": "Link Building", "available": false },
+      { "name": "Site Migration", "available": false }
+    ]
+  },
+  {
+    "title": "Standard Plan",
+    "price": "$59",
+    "features": [
+      { "name": "SEO Audits", "available": true },
+      { "name": "SEO Management", "available": true },
+      { "name": "SEO Copywriting", "available": true },
+      { "name": "Link Building", "available": false },
+      { "name": "Site Migration", "available": false }
+    ]
+  },
+  {
+    "title": "Premium Plan",
+    "price": "$89",
+    "features": [
+      { "name": "SEO Audits", "available": true },
+      { "name": "SEO Management", "available": true },
+      { "name": "SEO Copywriting", "available": true },
+      { "name": "Link Building", "available": true },
+      { "name": "Site Migration", "available": true }
+    ]
+  }
+]

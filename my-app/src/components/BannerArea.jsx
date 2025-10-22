@@ -1,5 +1,6 @@
 import React from 'react'
 import banner from '../assets/home-hero-new@2x.jpg'
+import mouse from '../assets/mouse.png'
 
 const BannerArea = () => {
     return (
