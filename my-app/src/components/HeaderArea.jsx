@@ -1,18 +1,25 @@
-import React from 'react'
-import logo from '../assets/logo-dark.svg'
-import profile from '../assets/profile.png'
+import React from 'react';
+import logo from '../assets/logo-dark.svg';
+import profile from '../assets/profile.png';
 
-const HeaderArea = () => {
+const HeaderArea = ({ onServicesClick }) => {
   return (
     <nav className="bg-white px-6 md:px-12 py-4 flex items-center justify-between">
       
       <div className="text-2xl font-bold text-indigo-600">
-        <img className='h-[35px] mt-[20px] ml-[50px] cursor-pointer' src={logo} alt="" />
+        <img className='h-[35px] mt-5 ml-[50px] cursor-pointer' src={logo} alt="" />
       </div>
       
-      <ul className="hidden md:flex gap-8 text-gray-700 font-medium mt-[10px]">
+      <ul className="hidden md:flex gap-8 text-gray-700 font-medium mt-2.5">
         <li className="hover:text-indigo-600 cursor-pointer transition hover:underline hover:decoration-yellow-500 hover:decoration-2 hover:underline-offset-10">Home</li>
-        <li className="hover:text-indigo-600 cursor-pointer transition hover:underline hover:decoration-yellow-500 hover:decoration-2 hover:underline-offset-10">Services</li>
+        
+        <li
+          onClick={onServicesClick}
+          className="hover:text-indigo-600 cursor-pointer transition hover:underline hover:decoration-yellow-500 hover:decoration-2 hover:underline-offset-10"
+        >
+          Services
+        </li>
+
         <li className="hover:text-indigo-600 cursor-pointer transition hover:underline hover:decoration-yellow-500 hover:decoration-2 hover:underline-offset-10">About</li>
         <li className="hover:text-indigo-600 cursor-pointer transition hover:underline hover:decoration-yellow-500 hover:decoration-2 hover:underline-offset-10">Blog</li>
         <li className="hover:text-indigo-600 cursor-pointer transition hover:underline hover:decoration-yellow-500 hover:decoration-2 hover:underline-offset-10">Contact</li>
@@ -31,4 +38,4 @@ const HeaderArea = () => {
   )
 }
 
-export default HeaderArea
+export default HeaderArea;

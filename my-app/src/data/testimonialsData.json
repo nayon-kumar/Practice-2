@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Rebecca Ortiz",
+    "image": "../assets/avatar-1@2x.jpg",
+    "feedback": "Duis rhoncus dui venenatis consequat porttitor. Etiam aliquet congue consequat. In posuere, nunc sit amet laoreet blandit, urna sapien imperdiet lectus, et molestie sem tortor quis dui."
+  },
+  {
+    "id": 2,
+    "name": "Michael Berillo",
+    "image": "../assets/avatar-2@2x.jpg",
+    "feedback": "Duis rhoncus dui venenatis consequat porttitor. Etiam aliquet congue consequat. In posuere, nunc sit amet laoreet blandit, urna sapien imperdiet lectus, et molestie sem tortor quis dui."
+  }
+]

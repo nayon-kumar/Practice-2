@@ -1,20 +1,33 @@
-import React from 'react'
-import HeaderArea from './components/HeaderArea'
-import BannerArea from './components/BannerArea'
-import ServiceArea from './components/ServiceArea'
-import PricingPlan from './components/PricingPlan'
-import Team from './components/Team'
+import React, { useRef } from 'react';
+import HeaderArea from './components/HeaderArea';
+import BannerArea from './components/BannerArea';
+import ServiceArea from './components/ServiceArea';
+import PricingPlan from './components/PricingPlan';
+import Team from './components/Team';
+import Testimonials from './components/Testimonials';
 
 const App = () => {
+  const serviceRef = useRef(null);
+
+  const scrollToServices = () => {
+    serviceRef.current.scrollIntoView({ behavior: 'smooth' }); 
+  };
+
   return (
     <div>
-      <HeaderArea/>
-      <BannerArea/>
-      <ServiceArea/>
-      <PricingPlan/>
-      <Team/> 
-    </div>
-  )
-}
+      <HeaderArea onServicesClick={scrollToServices} />
 
-export default App
+      <BannerArea />
+
+      <div ref={serviceRef}>
+        <ServiceArea />
+      </div>
+
+      <PricingPlan />
+      <Team />
+      <Testimonials/>
+    </div>
+  );
+};
+
+export default App;
