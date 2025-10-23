@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "icon": "../assets/design-icon.svg",
+    "title": "UX/UI Design",
+    "description": "Fusce dignissim blandit justo, eget elementum.",
+    "extraClass": "lg:mt-[-150px]"
+  },
+  {
+    "id": 2,
+    "icon": "../assets/brand-icon.svg",
+    "title": "Brand Identity",
+    "description": "Fusce dignissim blandit justo, eget elementum."
+  },
+  {
+    "id": 3,
+    "icon": "../assets/marketing-icon.svg",
+    "title": "Marketing & SEO",
+    "description": "Fusce dignissim blandit justo, eget elementum.",
+    "extraClass": "lg:mt-[-150px]"
+  },
+  {
+    "id": 4,
+    "icon": "../assets/development-icon.svg",
+    "title": "Web Development",
+    "description": "Fusce dignissim blandit justo, eget elementum."
+  }
+]

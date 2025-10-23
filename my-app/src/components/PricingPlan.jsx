@@ -5,7 +5,7 @@ import cardData from '../data/cardData.json' // import JSON
 
 const PricingPlan = () => {
     return (
-        <div>
+        <div className='mt-10'>
             <div>
                 <h3 className='text-center font-bold'>PRICING PLANS</h3>
                 <h1 className='mt-[15px] text-3xl font-bold text-center'>The Best Solutions for Our Clients</h1>
