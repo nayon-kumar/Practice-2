@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Massa Vitae Toutor Condimentum Lacinia Quis",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.…",
+    "image": "book",
+    "tags": ["AGENCY", "NEWS"]
+  },
+  {
+    "id": 2,
+    "title": "Venenatis Urna Cursus Eget Nunc Scelerisque",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.…",
+    "image": "laptop",
+    "tags": ["NEWS"]
+  },
+  {
+    "id": 3,
+    "title": "Donec Adipiscing Tristique Risus Nec Feugiat",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.…",
+    "image": "female",
+    "tags": ["NEWS"]
+  }
+]

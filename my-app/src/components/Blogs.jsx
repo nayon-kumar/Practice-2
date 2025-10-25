@@ -1,12 +1,15 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import blogsData from '../data/blogs.json'
 import laptop from '../assets/laptop.jpg'
 import book from '../assets/book.jpg'
 import female from '../assets/female.jpg'
 
+const images = { laptop, book, female }
+
 const Blogs = () => {
     return (
-        <div>
+        <div className='bg-gray-100 -mt-5'>
             <div>
                 <motion.h1
                     className='mt-[15px] text-3xl font-bold text-center'
@@ -30,74 +33,26 @@ const Blogs = () => {
             </div>
 
             <div className="w-[90%] max-w-6xl mx-auto flex flex-col md:flex-row gap-8 py-12">
-
-                {/* Card 1 */}
-                <div className="flex flex-col bg-white rounded-2xl shadow-md overflow-hidden">
-                    <div className="overflow-hidden">
-                        <img 
-                            src={book} 
-                            alt="Book" 
-                            className="w-full h-full object-cover mb-4 transform transition-transform duration-500 hover:scale-105"
-                        />
+                {blogsData.map(blog => (
+                    <div key={blog.id} className="flex flex-col bg-white rounded-2xl shadow-md overflow-hidden">
+                        <div className="overflow-hidden">
+                            <img 
+                                src={images[blog.image]} 
+                                alt={blog.title} 
+                                className="w-full h-full object-cover mb-4 transform transition-transform duration-500 hover:scale-105"
+                            />
+                        </div>
+                        <div className="flex gap-4 text-sm mb-2 p-4">
+                            {blog.tags.map((tag, index) => (
+                                <a key={index} href="#" className="bg-[#FFC900] px-2 text-[15px]">{tag}</a>
+                            ))}
+                        </div>
+                        <div className="px-4 pb-4">
+                            <h1 className="text-[20px] font-bold text-gray-900 mb-2">{blog.title}</h1>
+                            <p className="text-gray-600 text-sm">{blog.description}</p>
+                        </div>
                     </div>
-                    <div className="flex gap-4 text-sm mb-2 p-4">
-                        <a href="#" className="bg-[#FFC900] px-2 text-[15px]">AGENCY</a>
-                        <a href="#" className="bg-[#FFC900] px-2 text-[15px]">NEWS</a>
-                    </div>
-                    <div className="px-4 pb-4">
-                        <h1 className="text-[20px] font-bold text-gray-900 mb-2">
-                            Massa Vitae Toutor Condimentum Lacinia Quis
-                        </h1>
-                        <p className="text-gray-600 text-sm">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.… 
-                        </p>
-                    </div>
-                </div>
-
-                {/* Card 2 */}
-                <div className="flex flex-col bg-white rounded-2xl shadow-md overflow-hidden">
-                    <div className="overflow-hidden">
-                        <img 
-                            src={laptop} 
-                            alt="Laptop" 
-                            className="w-full h-full object-cover mb-4 transform transition-transform duration-500 hover:scale-105"
-                        />
-                    </div>
-                    <div className="flex gap-4 text-sm mb-2 p-4">
-                        <a href="#" className="bg-[#FFC900] px-2 text-[15px]">NEWS</a>
-                    </div>
-                    <div className="px-4 pb-4">
-                        <h1 className="text-[20px] font-bold text-gray-900 mb-2">
-                            Venenatis Urna Cursus Eget Nunc Scelerisque
-                        </h1>
-                        <p className="text-gray-600 text-sm">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.… 
-                        </p>
-                    </div>
-                </div>
-
-                {/* Card 3 */}
-                <div className="flex flex-col bg-white rounded-2xl shadow-md overflow-hidden">
-                    <div className="overflow-hidden">
-                        <img 
-                            src={female} 
-                            alt="Female" 
-                            className="w-full h-full object-cover mb-4 transform transition-transform duration-500 hover:scale-105"
-                        />
-                    </div>
-                    <div className="flex gap-4 text-sm mb-2 p-4">
-                        <a href="#" className="bg-[#FFC900] px-2 text-[15px]">NEWS</a>
-                    </div>
-                    <div className="px-4 pb-4">
-                        <h1 className="text-[20px] font-bold text-gray-900 mb-2">
-                            Donec Adipiscing Tristique Risus Nec Feugiat
-                        </h1>
-                        <p className="text-gray-600 text-sm">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.… 
-                        </p>
-                    </div>
-                </div>
-
+                ))}
             </div>
         </div>
     )
