@@ -14,7 +14,6 @@ const Companies = () => {
                     <p className="text-gray-600">Trusted Companies</p>
                 </div>
 
-                {/* Logo Sections */}
                 <div className="flex flex-col sm:flex-col md:flex-row items-center justify-center gap-15">
                     <img src={slack} alt="Slack" className="w-28" />
                     <img src={dropbox} alt="Dropbox" className="w-28" />

@@ -7,6 +7,7 @@ import Team from './components/Team';
 import Testimonials from './components/Testimonials';
 import Companies from './components/Companies';
 import GetInTouch from './components/GetInTouch';
+import Blogs from './components/Blogs';
 
 const App = () => {
   const serviceRef = useRef(null);
@@ -30,6 +31,7 @@ const App = () => {
       <Testimonials/>
       <Companies/>
       <GetInTouch/>
+      <Blogs/>
     </div>
   );
 };
