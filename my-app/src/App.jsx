@@ -5,6 +5,8 @@ import ServiceArea from './components/ServiceArea';
 import PricingPlan from './components/PricingPlan';
 import Team from './components/Team';
 import Testimonials from './components/Testimonials';
+import Companies from './components/Companies';
+import GetInTouch from './components/GetInTouch';
 
 const App = () => {
   const serviceRef = useRef(null);
@@ -26,6 +28,8 @@ const App = () => {
       <PricingPlan />
       <Team />
       <Testimonials/>
+      <Companies/>
+      <GetInTouch/>
     </div>
   );
 };
